@@ -3,3 +3,17 @@ body {
      img { width: 300px}
     
 }
+.heroImage{
+    height: 100vh;
+    background-color: red;
+    
+}
+
+.projetos{
+    height: 100vh;
+    background-color: purple;
+}
+.disciplina{
+    height: 100vh;
+    background-color: darkorange;
+}

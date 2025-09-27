@@ -1,18 +1,78 @@
 body {
     background-color: beige;
-     img { width: 300px}
     
 }
-.heroImage{
+.landingPage{
+    position: relative;
     height: 100vh;
-    background-color: red;
+    background-color: orangered;
     
+}
+.landingPage img {
+    background-size: cover;
+}
+.landingPage p {
+    position: absolute;
+    bottom: 50%;
+    left: 300px;
+    height: 100px;
+    text-align: center;
+    color: azure;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+.heroImage nav {
+    position: absolute;
+    top: 20px;  
+    right: 20px; 
+}
+
+.heroImage nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.heroImage nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 .projetos{
     height: 100vh;
-    background-color: purple;
+    background-color: burlywood;
 }
+
+.projetos h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+.projetos p{
+    font-size: 1.5em;
+}
+.cards {
+    display: flex;
+    gap: 50px;           
+    text-align: center;
+    padding: 20px;
+}
+.card {
+    background: pink;
+    padding: 10px;
+    border-radius: 30px;
+    flex: 150px;
+}
+.projetos .card h3 a{
+   text-decoration: none;
+   color: black;
+    font-weight: bold;
+
+}
+
 .disciplina{
     height: 100vh;
     background-color: darkorange;

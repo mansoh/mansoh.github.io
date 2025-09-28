@@ -78,7 +78,7 @@ body {
     height: 100vh;
     background-color: darkorange;
 }
-.disciplina a{
+.cadeira .disciplina a{
     text-decoration: none;
     color: black;
     font-weight: bold;

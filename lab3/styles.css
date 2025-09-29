@@ -6,10 +6,14 @@ body {
 }
 
 nav a {
-    padding: 10px;
-    text-align: center;
     text-decoration: none;
-    color:azure;
+    color: white;
+    font-weight: bold;
+}
+.indiceMM a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 h1 {
     background-color: greenyellow;
@@ -35,7 +39,81 @@ footer{
     margin-left: auto;
     margin-right: auto;
 }
-.fotografias{
-    width: 50%;
-    
+.fotografias {
+  position: relative;
+  background-image: url("images/ponte.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px;
+}
+.fotografias h3{
+color: white;
+  font-weight: bold;
+  font-size: 1vw;
+
+}
+.fotografias .imagens {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+}
+.fotografias .imagens img {
+  border-radius: 8px;
+    transition: width 3s;
+}
+.fotografias .imagens img:hover {
+    width: 200px;
+}
+
+.video {
+  position: relative;
+  background-image: url("images/noite.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 300px;
+
+}
+.video h4{
+      color: white;
+  font-weight: bold;
+  font-size: 1.5vw;
+  text-align: center;
+}
+.youtube iframe {
+    margin-left: 30%;
+   
+}
+
+.poema {
+  position: relative;
+  background-image: url("images/livro.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px;
+  color: white;
+  text-align: center;
+  font-size: 1.5vw;
+}
+.poema .poema p{
+    background: azure;
+    padding: 15px;
+    border-radius: 300px;
+    flex: 15px;
+color: black;
+}
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    header, nav a {
+        flex-direction: column;
+    }
+    nav a {
+        display: flex;
+    }
+    header:hover nav a{
+        display: flex;
+    }
 }

@@ -34,7 +34,7 @@ footer{
     padding: 10px;
     color: azure;
 }
-.maps{
+.localizacao .maps{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -52,18 +52,15 @@ color: white;
   font-size: 1vw;
 
 }
-.fotografias .imagens {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-
-}
 .fotografias .imagens img {
-  border-radius: 8px;
-    transition: width 3s;
+  width: 200px;   
+  height: 150px; 
+  border-radius: 10px;
+  transition: width 1s;
 }
+
 .fotografias .imagens img:hover {
-    width: 200px;
+  width: 300px;
 }
 
 .video {
@@ -116,4 +113,70 @@ color: black;
     header:hover nav a{
         display: flex;
     }
+}
+.localizacao {
+    display: flex;
+    gap:20px; 
+}
+ @media (max-width: 400px) {
+    .localizacao{
+        flex-direction: column;
+    }
+ }
+
+    .informacoes {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "foto1 foto2 foto2"
+        "footer footer footer";
+    gap: 15px;
+    width: 100%;
+    margin: 10px;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    grid-area: main;
+    width: 100%;
+}
+
+.foto1 {
+    grid-area: foto1;
+    margin: 10px;
+}
+
+.foto2 {
+    grid-area: foto2;
+    margin: 10px;
+}
+
+main img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;
 }

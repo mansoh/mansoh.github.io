@@ -19,8 +19,8 @@ function mudarCor() {
   let cor = document.getElementById("cor").value;
   document.body.style.backgroundColor = cor;
 }
-let counter = 0;
 
+let counter = 0;
 function contar() {
    const heading = document.getElementById("contador");
    counter++;

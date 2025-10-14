@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício JS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Exercício de Eventos</h1>
+  </header>
+
+  <main>
+
+    <p id="zona">1. Passa o rato aqui!</p>
+
+    <button onclick="pintar('red')">Red</button>
+    <button onclick="pintar('green')">Green</button>
+    <button onclick="pintar('blue')">Blue</button>
+
+    <p id="caixa">2. Pinta-me!</p>
+    <section id="escrever">
+      <label for="input">
+        3. Experimenta escrever...
+      </label>
+<input id="input" type="text" oninput="colorir()">
+    </section>
+   
+    <p id="saida"></p>
+<label for="text">4. Escolha uma cor em inglês</label>
+    <input type="text" id="cor">
+    <button onclick="mudarCor()">submeter</button>
+    <p></p>
+<label for="contar()">5.</label>
+    <button id="botaoConta" ondblclick="contar()">Conta!</button>
+    <span id="numero">0</span>
+
+
+      <script src="scripts/main.js"></script>
+  </main>
+
+  <footer>
+    <p>DIW</p>
+  </footer>
+
+</body>
+</html>

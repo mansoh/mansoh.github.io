@@ -43,3 +43,12 @@ if (i >= 3) i = 0
 }
 
 input.addEventListener("input", colorir)
+
+//6.
+document.querySelector('#dadosFormulario').onsubmit = (e) => {
+e.preventDefault();
+const nome = document.querySelector('#nome').value;
+const idade = document.querySelector('#idade').value;
+
+document.querySelector('#mensagem').textContent = `Olá, o ${nome} tem ${idade}!`;
+};
